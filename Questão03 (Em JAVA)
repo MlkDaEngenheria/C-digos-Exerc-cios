@@ -1,0 +1,30 @@
+package bob;
+
+import java.util.Scanner;
+
+public class Viadagem {
+
+	public static void main(String[] args) {
+		double quantiaL, valorD = 1.84;
+        char resp;
+        
+        Scanner entrada = new Scanner(System.in);
+
+        do {
+
+            System.out.print ("Digite uma quantia em Libras Inglesas: ");
+           quantiaL = entrada.nextDouble();
+
+            double resultado = quantiaL * valorD;
+            
+            System.out.printf("\nO valor em Dólares é: %2.2f", resultado);
+
+            System.out.print("\nDeseja converter algum outro valor? (S/N):");
+            resp = entrada.next().toUpperCase().charAt(0);
+
+
+        } while (resp == 'S');
+        System.out.print("\n \nPROGRAMA ENCERRADO PELO USUÁRIO.");
+	}
+
+}

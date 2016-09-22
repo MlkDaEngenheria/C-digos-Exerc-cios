@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+    int main(void){
+
+    setlocale(LC_ALL, "Portuguese");
+
+    int n, i = 1;
+    int soma = 0;
+
+
+    printf("Digite um número: ");
+    scanf("%d", &n);
+
+        while (i <= n){
+
+            if (n == i){
+
+                printf("%d = ", i);
+                soma = soma + i;
+                i++;
+
+            } else if (i <= n){
+
+                printf("%d + ", i);
+                soma = soma + i;
+                i++;
+
+            }
+
+        }
+
+        printf("Somatório: %d", soma);
+
+ }

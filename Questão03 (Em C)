@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+    int main(void){
+
+        setlocale(LC_ALL, "Portuguese");
+
+        float quantiaL, valorD = 1.84;
+        char resp;
+
+        do {
+
+            printf("Digite uma quantia em Libras Inglesas: ");
+            scanf("%f", &quantiaL);
+
+            valorD = quantiaL * valorD;
+            printf("\nO valor em Dólares é: %2.2f", valorD);
+
+            printf("\nDeseja transformar algum outro valor? (S/N)");
+            scanf("%s", &resp);
+
+
+
+        } while (resp == 's');
+
+
+    }

@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+   int main (void){
+
+        setlocale(LC_ALL, "Portuguese");
+
+        int soma = 0;
+        int i = 10;
+
+
+        do{
+            if (i == 3){
+            printf("%d = ", i);
+            soma = soma + i;
+            i--;
+
+
+        } else if (i >= 3){
+
+            printf("%d + ", i);
+            soma = soma + i;
+            i--;
+
+            }
+
+        } while (i >= 3);
+
+         printf("Somatório: %d", soma);
+
+   }

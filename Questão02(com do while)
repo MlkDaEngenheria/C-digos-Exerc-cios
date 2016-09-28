@@ -31,6 +31,6 @@
 
         } while (i <= n);
 
-        printf("Somatório: %d", soma);
+        printf("\nSomatório: %d", soma);
 
  }
